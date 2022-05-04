@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/inter-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/inter-bold.woff2") format("woff2");
+}
+
+html {
+  height: 100%; // for sticky-footer
+}
+
+.page {
+  display: flex; // for sticky-footer
+  flex-direction: column; // for sticky-footer
+  min-height: 100%; // for sticky-footer
+
+  margin: 0;
+  min-width: 1440px;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: $basic-extra-dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container {
+  flex-grow: 1; // for sticky-footer
+}
+
+.page-container {
+  @include container;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
