@@ -81,6 +81,7 @@
           </tr>
         </table>
         <picture class="knit-baskets__image">
+          <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg">
           <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg">
           <img src="./img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки.">
         </picture>
@@ -104,7 +105,7 @@
           <a class="about__link about__link--love" href="">Увеличивает лайки на фотографиях</a>
         </li>
         <li class="about__item">
-          <a class="about__link about__link--hands" href="">Связано вручную с любовью и умилением</a>
+          <a class="about__link about__link--hands" href="">Связано вручную с любовью и умилением</a>
         </li>
         <li class="about__item">
           <a class="about__link about__link--support" href="">Поддержка отечественного производителя</a>
@@ -142,31 +143,36 @@
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__text">
+          <h2 class="contacts__title">Контакты</h2>
 
-        <div class="contacts__group">
-          <span>e-mail:</span>
-          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <div class="contacts__info">
+            <div class="contacts__group">
+              <span>e-mail:</span>
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+
+            <div class="contacts__group">
+              <span>адрес:</span>
+              <address class="contacts__address">г. Санкт-Петербург<br>
+                ул. Большая Конюшенная<br>
+                д. 19/8, офис 101
+              </address>
+            </div>
+          </div>
         </div>
 
-        <div class="contacts__group">
-          <span>адрес:</span>
-          <address class="contacts__address">г. Санкт-Петербург<br>
-            ул. Большая Конюшенная<br>
-            д. 19/8, офис 101
-          </address>
+        <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg">
+            <img src="./img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
+          </picture>
         </div>
-      </div>
 
-      <div class="contacts__map">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg">
-          <img src="./img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101">
-        </picture>
-      </div>
-
-      <div class="contacts__wrapper">
-        <a class="contacts__button button" href="">Напишите нам</a>
+        <div class="contacts__button">
+          <a class="contacts__write button" href="">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>

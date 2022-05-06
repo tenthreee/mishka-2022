@@ -24,6 +24,10 @@
       background-image: url("../img/zigzag-line-desktop.svg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .knit-baskets__wrapper {
@@ -41,6 +45,13 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+  }
 }
 
 .knit-baskets__title-wrapper {
@@ -52,6 +63,15 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-bottom: 35px;
+
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: 1;
+  }
 }
 
 .knit-baskets__title {
@@ -59,6 +79,11 @@
 
   @media (min-width: $tablet-width) {
     @include title-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title-desktop;
+    padding-left: 175px;
   }
 }
 
@@ -70,8 +95,14 @@
 
   @media (min-width: $tablet-width) {
     width: 100px;
+
     line-height: 18px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 50px;
   }
 }
 
@@ -91,6 +122,12 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-left: 175px;
+  }
 }
 
 .knit-baskets__features {
@@ -108,13 +145,27 @@
     grid-area: table;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding-left: 175px;
+    margin-bottom: 110px;
+  }
 }
 
 .knit-baskets__order-group {
   margin-top: 30px;
 
   @media (min-width: $tablet-width) {
+    grid-area: buttons;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    padding-left: 175px;
   }
 }
 
@@ -135,5 +186,10 @@
 .knit-baskets__image {
   @media (min-width: $tablet-width) {
     grid-area: image;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
   }
 }
