@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin-right: 30px;
+}
+
+.copyright__logo  {
+  &:hover svg path {
+    fill: $special-dark-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+
+    & svg path {
+      fill: $special-dark-hover;
+    }
+  }
+}

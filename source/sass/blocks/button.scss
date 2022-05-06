@@ -1,0 +1,24 @@
+.button {
+  @include link;
+
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $basic-dark;
+
+  &:hover {
+    color: $basic-extra-light;
+    background-color: $basic-dark;
+    border-color: transparent;
+  }
+
+  &:active {
+    color: rgba($color: $basic-extra-light, $alpha: $opacity-active);
+  }
+}

@@ -1,7 +1,23 @@
-// Служебные
-@import "normalize.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "scaffolding.scss";
+// Global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
 
-// БЭМ-блоки
+// Blocks
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/main-container.scss";
+@import "blocks/hero.scss";
+@import "blocks/knit-baskets.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+
+@import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
