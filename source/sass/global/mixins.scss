@@ -1,0 +1,37 @@
+@mixin container-mobile {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: $mobile-width;
+  box-sizing: border-box;
+}
+
+@mixin container-tablet {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: $tablet-width;
+  box-sizing: border-box;
+}
+
+@mixin title-mobile () {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@mixin title-tablet () {
+  font-size: 44px;
+  line-height: 50px;
+}
+
+@mixin link () {
+  text-decoration: none;
+  color: $basic-extra-dark;
+}
+
+@mixin list-unstyled () {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
