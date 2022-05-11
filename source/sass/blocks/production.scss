@@ -65,6 +65,10 @@
   padding: 30px;
   border: 1px solid $basic-neutral;
 
+  &:hover {
+    box-shadow: 0px 6px 10px rgba($basic-extra-dark, 0.1);
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-right: 50px;
