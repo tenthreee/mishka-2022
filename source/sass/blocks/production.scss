@@ -48,7 +48,17 @@
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transform: translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: $opacity-active;
+  }
 }
 
 .production__description {
