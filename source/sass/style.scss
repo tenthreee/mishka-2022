@@ -11,13 +11,17 @@
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
-@import "blocks/main-container.scss";
 @import "blocks/hero.scss";
 @import "blocks/knit-baskets.scss";
 @import "blocks/about.scss";
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
-
 @import "blocks/main-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+
+// Blocks Catalog
+@import "blocks/main-title.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/production.scss";
