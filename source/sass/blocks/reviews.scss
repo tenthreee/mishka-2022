@@ -36,6 +36,11 @@
     padding-bottom: 100px;
     background-image: url("../img/reviews@1x.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
