@@ -233,5 +233,34 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-container modal-container--close">
+    <div class="modal modal--cart">
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="cart">
+        <h2 class="cart__title">Добавить в корзину</h2>
+        <p class="cart__note">Выберите размер:</p>
+        <form class="cart__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="cart__list">
+            <li class="cart__item">
+              <input class="cart__radio visually-hidden" type="radio" name="size" id="size__small" checked>
+              <label for="size__small">S</label>
+            </li>
+            <li class="cart__item">
+              <input class="cart__radio visually-hidden" type="radio" name="size" id="size__medium">
+              <label for="size__medium">M</label>
+            </li>
+            <li class="cart__item">
+              <input class="cart__radio visually-hidden" type="radio" name="size" id="size__large">
+              <label for="size__large">L</label>
+            </li>
+          </ul>
+          <button class="cart__add button button--special">Добавить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
