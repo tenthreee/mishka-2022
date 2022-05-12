@@ -19,7 +19,6 @@
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
     font-size: inherit;
     line-height: 30px;
   }
@@ -48,7 +47,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     display: grid;
     grid-template-columns: 170px 1fr;
@@ -56,10 +57,32 @@
     &--contacts {
       display: block;
     }
+
+    &--color {
+      position: relative;
+      background-color: $basic-light;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: calc((100vw - 768px + 100px) / 2 * -1);
+
+        width: 100vw;
+        height: 100%;
+
+        background-color: $basic-light;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 110px 1fr;
+
+    &--color::before {
+      left: calc((100vw - 1150px + 220px) / 2 * -1);
+    }
   }
 }
 
@@ -213,6 +236,7 @@
     font-size: inherit;
     border: none;
     border-bottom: 2px solid $basic-extra-dark;
+    background-color: transparent;
 
     &::placeholder {
       color: $basic-neutral;
@@ -286,7 +310,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
+    margin-top: 0;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
