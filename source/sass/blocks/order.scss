@@ -275,14 +275,23 @@
 .order__group textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
 
+  font-family: inherit;
   font-size: inherit;
   border: 2px solid $basic-extra-dark;
 
   &::placeholder {
-  font-family: inherit;
-  color: $basic-neutral;
+    color: $basic-neutral;
+  }
+
+  &:hover {
+    border-color: $special-light;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $special-dark;
   }
 }
 
