@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mishka</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
+          <img src="./img/mishka-logo-mobile.svg" alt="Mishka">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--search" href="#">
+                <span class="user-list__link-text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">
+                <span class="user-list__link-text">Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <header class="main-title">
+      <h1>Каталог товаров</h1>
+    </header>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/content/catalog-rabbit-desktop@1x.webp 1x, ./img/content/catalog-rabbit-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/content/catalog-rabbit-tablet@1x.webp 1x, ./img/content/catalog-rabbit-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/catalog-rabbit-mobile@1x.webp 1x, ./img/content/catalog-rabbit-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="./img/content/catalog-rabbit-desktop@1x.jpg 1x, ./img/content/catalog-rabbit-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/content/catalog-rabbit-tablet@1x.jpg 1x, ./img/content/catalog-rabbit-tablet@2x.jpg 2x">
+            <img class="card__image" src="./img/content/catalog-rabbit-mobile@1x.jpg" srcset="./img/content/catalog-rabbit-mobile@2x.jpg 2x" alt="Вязаный заяц.">
+          </picture>
+          <div class="card__text">
+            <a class="card__link" href="">
+              <h3 class="card__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+            <div class="card__buy">
+              <b class="card__price">1 200 руб.</b>
+              <button class="card__button order-button" type="button">
+                <span class="visually-hidden">Купить</span>
+                <svg width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/content/catalog-basket-desktop@1x.webp 1x, ./img/content/catalog-basket-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/content/catalog-basket-tablet@1x.webp 1x, ./img/content/catalog-basket-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/catalog-basket-mobile@1x.webp 1x, ./img/content/catalog-basket-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="./img/content/catalog-basket-desktop@1x.jpg 1x, ./img/content/catalog-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/content/catalog-basket-tablet@1x.jpg 1x, ./img/content/catalog-basket-tablet@2x.jpg 2x">
+            <img class="card__image" src="./img/content/catalog-basket-mobile@1x.jpg" srcset="./img/content/catalog-basket-mobile@2x.jpg 2x" alt="Вязаная корзина для белья.">
+          </picture>
+          <div class="card__text">
+            <a class="card__link" href="">
+              <h3 class="card__title">Корзинка для белья</h3>
+            </a>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+            <div class="card__buy">
+              <b class="card__price">690 руб.</b>
+              <button class="card__button order-button" type="button">
+                <span class="visually-hidden">Купить</span>
+                <svg width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/content/catalog-big-basket-desktop@1x.webp 1x, ./img/content/catalog-big-basket-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/content/catalog-big-basket-tablet@1x.webp 1x, ./img/content/catalog-big-basket-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/catalog-big-basket-mobile@1x.webp 1x, ./img/content/catalog-big-basket-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="./img/content/catalog-big-basket-desktop@1x.jpg 1x, ./img/content/catalog-big-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/content/catalog-big-basket-tablet@1x.jpg 1x, ./img/content/catalog-big-basket-tablet@2x.jpg 2x">
+            <img class="card__image" src="./img/content/catalog-big-basket-mobile@1x.jpg" srcset="./img/content/catalog-big-basket-mobile@2x.jpg 2x" alt="Большая вязаная корзина для игрушек.">
+          </picture>
+          <div class="card__text">
+            <a class="card__link" href="">
+              <h3 class="card__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+            <div class="card__buy">
+              <b class="card__price">1 500 руб.</b>
+              <button class="card__button order-button" type="button">
+                <span class="visually-hidden">Купить</span>
+                <svg width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="production">
+      <div class="production__wrapper">
+        <div class="production__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/content/catalog-video-desktop@1x.webp 1x, ./img/content/catalog-video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/content/catalog-video-tablet@1x.webp 1x, ./img/content/catalog-video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/catalog-video-mobile@1x.webp 1x, ./img/content/catalog-video-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px" srcset="./img/content/catalog-video-desktop@1x.jpg 1x, ./img/content/catalog-video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px" srcset="./img/content/catalog-video-tablet@1x.jpg 1x, ./img/content/catalog-video-tablet@2x.jpg 2x">
+            <img class="production__preview" src="./img/content/catalog-video-mobile@1x.jpg" srcset="./img/content/catalog-video-mobile@2x.jpg 2x" alt="Процесс изготовления корзины.">
+          </picture>
+          <button class="production__play" type="button">
+            <span class="visually-hidden">Проиграть видео</span>
+          </button>
+        </div>
+
+        <div class="production__description">
+          <h2 class="production__title">Процесс производства</h2>
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production__order button" href="">Сделать заказ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo" href="#">
+        <span class="visually-hidden">Mishka</span>
+        <svg width="102" height="34">
+          <use xlink:href="img/sprite.svg#mishka-logo-footer"></use>
+        </svg>
+      </a>
+
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Мы во Вконтакте</span>
+              <svg width="28" height="23">
+                <use xlink:href="img/sprite.svg#logo-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в Ютубе</span>
+              <svg width="28" height="23">
+                <use xlink:href="img/sprite.svg#logo-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в Телеграме</span>
+              <svg width="28" height="23">
+                <use xlink:href="img/sprite.svg#logo-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">html academy</span>
+          <svg width="27" height="35">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-container modal-container--closed">
+    <div class="modal modal--cart">
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="cart">
+        <h2 class="cart__title">Добавить в корзину</h2>
+        <p class="cart__note">Выберите размер:</p>
+        <form class="cart__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="cart__list">
+            <li class="cart__item">
+              <input class="cart__radio visually-hidden" type="radio" name="size" id="size__small" checked>
+              <label for="size__small">S</label>
+            </li>
+            <li class="cart__item">
+              <input class="cart__radio visually-hidden" type="radio" name="size" id="size__medium">
+              <label for="size__medium">M</label>
+            </li>
+            <li class="cart__item">
+              <input class="cart__radio visually-hidden" type="radio" name="size" id="size__large">
+              <label for="size__large">L</label>
+            </li>
+          </ul>
+          <button class="cart__add button button--special">Добавить</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
