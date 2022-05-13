@@ -18,7 +18,7 @@
           <img src="./img/mishka-logo-mobile.svg" alt="Mishka">
         </picture>
       </a>
-      <nav class="main-nav main-nav--nojs">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -73,7 +73,7 @@
             <p class="card__description">Рост 30 см, вес 200 г</p>
             <div class="card__buy">
               <b class="card__price">1 200 руб.</b>
-              <button class="card__button" type="button">
+              <button class="card__button order-button" type="button">
                 <span class="visually-hidden">Купить</span>
                 <svg width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -99,7 +99,7 @@
             <p class="card__description">Диаметр 15 см, высота 10 см</p>
             <div class="card__buy">
               <b class="card__price">690 руб.</b>
-              <button class="card__button" type="button">
+              <button class="card__button order-button" type="button">
                 <span class="visually-hidden">Купить</span>
                 <svg width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -125,7 +125,7 @@
             <p class="card__description">Диаметр 30 см, высота 30 см</p>
             <div class="card__buy">
               <b class="card__price">1 500 руб.</b>
-              <button class="card__button" type="button">
+              <button class="card__button order-button" type="button">
                 <span class="visually-hidden">Купить</span>
                 <svg width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -214,7 +214,7 @@
     </div>
   </footer>
 
-  <div class="modal-container modal-container--close">
+  <div class="modal-container modal-container--closed">
     <div class="modal modal--cart">
       <button class="modal__close">
         <span class="visually-hidden">Закрыть</span>
@@ -242,5 +242,7 @@
       </section>
     </div>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
