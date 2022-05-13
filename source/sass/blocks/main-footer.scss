@@ -28,14 +28,14 @@
     display: block;
     margin-right: 30px;
 
-    &:hover svg path {
+    &:hover svg {
       fill: $special-dark-hover;
     }
 
     &:active {
       opacity: $opacity-active;
 
-      & svg path {
+      & svg {
         fill: $special-dark-hover;
       }
     }
