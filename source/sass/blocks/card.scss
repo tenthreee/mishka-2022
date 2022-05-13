@@ -96,7 +96,11 @@
   background-color: transparent;
   cursor: pointer;
 
-  &:hover svg path {
+  & svg {
+    opacity: 0.2;
+  }
+
+  &:hover svg {
     fill: $special-dark;
     opacity: 1;
   }
