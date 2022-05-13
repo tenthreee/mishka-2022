@@ -272,6 +272,28 @@
   }
 }
 
+.order__pair--tel input {
+  background-image: url("../img/icon-tel.svg");
+  background-size: 25px 24px;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &:hover {
+    background-image: url("../img/icon-tel-hover.svg");
+  }
+}
+
+.order__pair--email input {
+  background-image: url("../img/icon-email.svg");
+  background-size: 32px 21px;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &:hover {
+    background-image: url("../img/icon-email-hover.svg");
+  }
+}
+
 .order__group textarea {
   box-sizing: border-box;
   width: 100%;
