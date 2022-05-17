@@ -19,6 +19,10 @@
 }
 
 .social__link {
+  & svg {
+    transition: 0.3s;
+  }
+
   &:hover svg {
     fill: $special-dark-hover;
   }

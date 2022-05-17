@@ -14,6 +14,7 @@
   border: none;
   background-color: $basic-extra-light;
   cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
     opacity: $opacity-hover;

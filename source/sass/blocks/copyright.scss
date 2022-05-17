@@ -11,6 +11,7 @@
 .copyright__logo {
   & svg {
     fill: $special-light-hover;
+    transition: 0.3s;
   }
 
   &:hover svg {

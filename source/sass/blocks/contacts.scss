@@ -113,6 +113,7 @@
   @include link;
   margin-left: 30px;
   border-bottom: 1px solid $special-light;
+  transition: 0.3s;
 
   &:hover {
     color: $special-light;

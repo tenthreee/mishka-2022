@@ -112,6 +112,7 @@
 
   background-repeat: no-repeat;
   background-position: right 30px center;
+  transition: 0.3s;
 
   &:active {
     color: rgba($color: $basic-extra-light, $alpha: $opacity-active);

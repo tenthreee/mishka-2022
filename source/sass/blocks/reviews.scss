@@ -135,6 +135,7 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  transition: 0.3s;
 
   &--next {
     background-image: url("../img/icon-huge-arrow-right.svg");
