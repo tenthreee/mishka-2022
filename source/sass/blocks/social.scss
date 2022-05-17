@@ -1,6 +1,11 @@
 .social {
   padding-bottom: 30px;
   border-bottom: 1px solid $basic-neutral;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .social__list {
@@ -8,14 +13,8 @@
 
   display: flex;
   justify-content: center;
-}
-
-.social__item {
-  margin-right: 30px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
+  flex-wrap: wrap;
+  gap: 15px 30px;
 }
 
 .social__link {
@@ -33,12 +32,5 @@
     & svg {
       fill: $special-dark-hover;
     }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .social {
-    padding: 0;
-    border: none;
   }
 }
