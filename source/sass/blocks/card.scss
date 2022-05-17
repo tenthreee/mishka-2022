@@ -12,6 +12,16 @@
 
 .card__image {
   vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .card__text {

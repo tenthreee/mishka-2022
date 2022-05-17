@@ -185,10 +185,20 @@
 .knit-baskets__image {
   @media (min-width: $tablet-width) {
     grid-area: image;
+
+    & img {
+      width: 334px;
+      height: 404px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
     grid-row: 1 / -1;
+
+    & img {
+      width: 525px;
+      height: 636px;
+    }
   }
 }

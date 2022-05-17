@@ -137,6 +137,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 50px;
     margin-bottom: 55px;
+
+    & img {
+      width: 768px;
+      height: 457px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -145,6 +150,11 @@
 
     margin: 0;
     text-align: start;
+
+    & img {
+      width: 527px;
+      height: 457px;
+    }
   }
 }
 

@@ -24,13 +24,23 @@
   position: absolute;
   top: 100px;
 
-  & img {
-    vertical-align: middle;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     top: auto;
+  }
+}
+
+.production__preview {
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    height: 455px;
   }
 }
 
